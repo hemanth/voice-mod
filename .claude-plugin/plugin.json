@@ -1,0 +1,9 @@
+{
+  "name": "voice",
+  "version": "0.1.0",
+  "description": "Dictate into the prompt box: a mic in the footer streams speech as text, cleaned up on stop. Never submits.",
+  "author": {
+    "name": "Hemanth HM"
+  },
+  "types": "./types/index.d.ts"
+}

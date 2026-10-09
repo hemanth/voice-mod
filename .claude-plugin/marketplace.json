@@ -1,0 +1,14 @@
+{
+  "name": "voice-mod",
+  "description": "Dictate into the Claude Code prompt box — footer mic streams on-device Moonshine speech-to-text and cleans up transcripts on stop without auto-submitting",
+  "owner": {
+    "name": "Hemanth HM"
+  },
+  "plugins": [
+    {
+      "name": "voice",
+      "source": "./",
+      "description": "Dictate into the prompt box: a mic in the footer streams speech as text, cleaned up on stop. Never submits."
+    }
+  ]
+}

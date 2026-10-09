@@ -1,0 +1,2 @@
+# Terms the speech recognizer tends to miss: Jira keys, file names,
+# product, team and people names. One per line. Lines starting with # are ignored.
