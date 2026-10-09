@@ -2,6 +2,12 @@
 
 Dictate into the Claude Code prompt box with a footer mic that streams on-device Moonshine speech-to-text and cleans up spoken transcripts on stop without ever auto-submitting.
 
+
+
+https://github.com/user-attachments/assets/d2ffb62a-8daa-4e7b-b0be-2f63dcdcacb2
+
+
+
 ```sh
 claude plugin marketplace add hemanth/voice-mod
 claude plugin install voice@voice-mod
