@@ -3,7 +3,17 @@
 Dictate into the Claude Code prompt box with a footer mic that streams on-device Moonshine speech-to-text and cleans up spoken transcripts on stop without ever auto-submitting.
 
 ```sh
+claude plugin marketplace add hemanth/voice-mod
+claude plugin install voice@voice-mod
+```
+
+Or inside a Claude Code session (run one at a time):
+
+```txt
 /plugin marketplace add hemanth/voice-mod
+```
+
+```txt
 /plugin install voice@voice-mod
 ```
 
