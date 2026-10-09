@@ -16,13 +16,13 @@ claude --plugin-dir ./voice-mod
 
 ## Quick start
 
-Click `` in the terminal footer (next to `SessionMode`) and speak.
+Click `🎤︎` in the terminal footer (next to `SessionMode`) and speak.
 
 ```
-● listening ▮▮▮▮▮▮▯▯▯▯ pause to finish ·  to stop
+● listening ▮▮▮▮▮▮▯▯▯▯ pause to finish · ■ to stop
 ```
 
-`partial` transcripts stream live into the prompt box every `0.5s` via `$.prompt.fill({ text, mode: 'replace' })`. Pausing for `1.5s` or clicking `` finalizes the recording, runs a low-latency Haiku cleanup pass, and leaves the polished text in your prompt box ready to edit or send.
+`partial` transcripts stream live into the prompt box every `0.5s` via `$.prompt.fill({ text, mode: 'replace' })`. Pausing for `1.5s` or clicking `■` finalizes the recording, runs a low-latency Haiku cleanup pass, and leaves the polished text in your prompt box ready to edit or send.
 
 ## Resident Moonshine listener
 
@@ -32,7 +32,7 @@ state["model"] = MoonshineOnnxModel(model_name="moonshine/tiny")
 state["tokenizer"] = load_tokenizer()
 ```
 
-`startHelper()` boots a resident Python listener at `session.start` inside an isolated `~/.cache/voice-mod/venv` (`useful-moonshine-onnx` + `sounddevice`) and controls it over `~/.cache/voice-mod/voice.fifo`. The ONNX weights load once in memory while the microphone stays closed until you click ``, keeping `0.5s` of pre-roll audio (`PRE_ROLL_BLOCKS = 5`) so the first word is never clipped.
+`startHelper()` boots a resident Python listener at `session.start` inside an isolated `~/.cache/voice-mod/venv` (`useful-moonshine-onnx` + `sounddevice`) and controls it over `~/.cache/voice-mod/voice.fifo`. The ONNX weights load once in memory while the microphone stays closed until you click `🎤︎`, keeping `0.5s` of pre-roll audio (`PRE_ROLL_BLOCKS = 5`) so the first word is never clipped.
 
 ## Spoken self-corrections
 

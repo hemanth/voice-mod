@@ -194,7 +194,7 @@ describe('voice: dictation into the prompt box', () => {
     await ui.pointer({ ...MIC_DOWN, in: 'mic' })
 
     expect(rec.spawns[0]?.slice(0, 2)).toEqual(['/home/test/.cache/voice-mod/venv/bin/python', '-I'])
-    expect(rec.spawns[0]?.[2]).toMatch(/\/voice\/speech\/listen\.py$/)
+    expect(rec.spawns[0]?.[2]).toMatch(/\/voice(-mod)?\/speech\/listen\.py$/)
   })
 
   test('first use sets up the venv, then listens', async ($, on) => {
@@ -282,7 +282,7 @@ describe('voice: dictation into the prompt box', () => {
     await ui.drawn()
 
     expect(tree).toContain('"color":"red"')
-    expect(tree).toContain('')
+    expect(tree).toContain('■')
   })
 
   test('the helper stays up across sessions: two clicks send two starts over one process', async ($, on) => {

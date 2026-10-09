@@ -7,8 +7,8 @@ const phase = atom({ plugin: 'voice', key: 'phase' } as const, 'idle' as VoicePh
 const level = atom({ plugin: 'voice', key: 'level' } as const, 0)
 
 const MIC = 'mic'
-const GLYPH_START = ''
-const GLYPH_STOP = ''
+const GLYPH_START = '🎤\uFE0E'
+const GLYPH_STOP = '■'
 const LISTENER = '/speech/listen.py'
 const VOCABULARY = '/vocabulary.txt'
 // The mod's own Python, made on first use outside the mod folder.
